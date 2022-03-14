@@ -17,9 +17,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.rockpprgame.rockpprgame",
+      "buildNumber": "1.0.0"
     },
     "android": {
+      "package": "com.rockpprgame.rockpprgame",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"

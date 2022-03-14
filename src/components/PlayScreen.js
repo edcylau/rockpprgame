@@ -8,6 +8,9 @@ import Scissors from './icon/scissors.png'
 
 
 const PlayScreen = () => {
+    const emojis = [Rock, Paper, Scissors]
+    let randomNum = Math.round(Math.random()*3)
+    console.log(randomNum)
     const [count, setCount] = useState(3);
 
     useEffect(()=>{
@@ -29,7 +32,7 @@ const PlayScreen = () => {
         {
             count < 1 ? 
             <>
-                <Image source={Paper} style={tw`w-32 h-32`} />
+                <Image source={emojis[randomNum]} style={tw`w-32 h-32 my-8`} />
                 <View style={tw`w-full`}>
                     <Button title="Play Again" onPress={()=>setCount(3)}/>
                 </View>
